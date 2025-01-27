@@ -1,0 +1,41 @@
+.header {
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 60vh;
+  row-gap: 6%;
+}
+
+/* .grid > * {
+  border: 20px solid rgb(173, 86, 33);
+  border-radius: 20px;
+  background-color: rgb(96 139 168 / 0.2);
+} */
+
+.one {
+  width: 30%;
+}
+
+.two {
+  width: 30%;
+}
+
+.one img {
+  height: 41vh;
+  width: 50vh;
+}
+
+.two img {
+  width: 50vh;
+  height: 41vh;
+}
+
+.three img {
+  width: 130vh;
+  height: 30vh;
+}

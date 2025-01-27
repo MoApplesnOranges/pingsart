@@ -1,0 +1,16 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: gray;
+  color: #fff;
+  padding: 1rem;
+}
+
+.navbar-right .nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 4vw;
+  justify-content: right;
+  resize: horizontal;
+}

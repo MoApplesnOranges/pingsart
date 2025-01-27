@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "bootstrap": "^5.3.3",
+    "emailjs": "^4.0.3",
+    "react": "^19.0.0",
+    "react-bootstrap": "^2.10.8",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.1.3",
+    "reactjs-popup": "^2.0.6"
+  },
+  "name": "pingsart",
+  "version": "1.0.0",
+  "description": "1. index.html <div id=\"root\">not rendered</div> <script src=\"https://unpkg.com/react@18.2.0/umd/react.development.js\"></script> <script src=\"https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js\"></script> <script type=\"module\" src=\"./src/App.js\"></script> 2. const App = () => {    return React.createElement(\"div\", {}, [    React.createElement(\"h1\", {}, \"Adopt Me!\"),    React.createElement(Pet, {    name: \"Luna\",    animal: \"Dog\",    breed: \"Havanese\",    }),    React.createElement(Pet, {    name: \"Pepper\",    animal: \"Bird\",    breed: \"Cockatiel\",    }),    React.createElement(Pet, { name: \"Doink\", animal: \"Cat\", breed: \"Mix\" }),    ]);    };",
+  "main": "index.js",
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.11"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
