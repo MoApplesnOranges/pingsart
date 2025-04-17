@@ -39,3 +39,57 @@
   width: 130vh;
   height: 30vh;
 }
+
+.photo {
+  display: flex;
+  color: tomato;
+  justify-content: center;
+  font-size: xx-large;
+}
+
+.paint {
+  display: flex;
+  color: turquoise;
+  justify-content: center;
+  font-size: xx-large;
+}
+
+.chinesepaint {
+  display: flex;
+  color: brown;
+  justify-content: center;
+  font-size: xx-large;
+}
+
+.container {
+  display: flex;
+}
+
+.artistphoto img {
+  display: flex;
+  justify-content: left;
+  border-radius: 8px;
+  border: 5px solid black;
+  max-height: 90vh;
+  max-width: 60%;
+  width: 30lvw;
+}
+
+.artist {
+  display: flex;
+  justify-content: center;
+  font-size: xxx-large;
+  color: green;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.artistbio {
+  display: grid;
+  justify-content: end;
+  width: 70%;
+  max-width: 50%;
+  align-items: right;
+  float: right;
+}
