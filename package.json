@@ -18,12 +18,11 @@
     "@vitejs/plugin-react": "^4.3.4",
     "vite": "^6.0.11"
   },
+
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "start": "react-scripts start",
+  "build": "react-scripts build"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
