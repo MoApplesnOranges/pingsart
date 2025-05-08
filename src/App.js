@@ -9,12 +9,14 @@ import Home from "./Pages/Home";
 import Chinese from "./Pages/chineseart";
 import Photography from "./Pages/photography";
 import Contact from "./Pages/contact";
+import PaintingDetail from "./Pages/paintingdetail";
+// import ChineseDetail from "./Pages/chinesedetail";
 import "../index.css";
 
 const App = () => {
   return (
     <Router>
-      <div>
+      <div className="App">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -22,6 +24,8 @@ const App = () => {
           <Route path="/chineseart" element={<Chinese />} />
           <Route path="/photography" element={<Photography />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/paintings/:id" element={<PaintingDetail />} />
+          {/* <Route path="/chineseart/:id" element={<ChineseDetail />} /> */}
         </Routes>
         <Footer />
       </div>

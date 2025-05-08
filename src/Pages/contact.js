@@ -36,20 +36,22 @@ const Contact = () => {
   return (
     <div>
       <form ref={form} className="form">
-        <div className="name">
+        <div style={{ marginBottom: "3%", marginTop: "3%" }} className="name">
           <label>Name</label>
           <input
             type="text"
             value={name}
             name="name"
+            placeholder="John Doe"
             onChange={(e) => setName(e.target.value)}
           />
         </div>
-        <div className="email">
+        <div style={{ marginBottom: "3%", marginTop: "3%" }} className="email">
           <label>Email</label>
           <input
             type="text"
             value={email}
+            placeholder="johndoe@gmail.com"
             name="user_email"
             onChange={(e) => setEmail(e.target.value)}
           />
@@ -57,7 +59,8 @@ const Contact = () => {
         <div className="message">
           <label>Message</label>
           <textarea
-            placeholder="Type your message here.."
+            style={{ height: "150px", width: "300px" }}
+            placeholder="Let us know your inquiry!"
             value={message}
             name="message"
             onChange={(e) => setMessage(e.target.value)}
