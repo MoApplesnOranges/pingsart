@@ -1,37 +1,33 @@
-import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import axios from "axios";
+import React from "react";
+import { useParams, NavLink } from "react-router-dom";
+import paintings from "./data/paintings";
 
 const PaintingDetail = () => {
   const { id } = useParams();
-  const [painting, setPainting] = useState(null);
 
-  useEffect(() => {
-    axios
-      .get(`http://localhost:8000/paintings/${id}/`)
-      .then((res) => setPainting(res.data))
-      .catch((err) => console.error(err));
-  }, [id]);
+  const painting = paintings.find((p) => p.id.toString() === id);
 
-  if (!painting) return <div>Loading...</div>;
+  if (!painting) {
+    return (
+      <div className="text-white text-center mt-20">Painting not found</div>
+    );
+  }
 
   return (
-    <div style={{ maxWidth: "800px", margin: "0 auto", padding: "20px" }}>
-      <img
-        src={`${painting.image}`}
-        alt={painting.title}
-        style={{ width: "100%", marginBottom: "20px" }}
-      />
-      <h2>{painting.title}</h2>
-      <p>
-        <strong>Year:</strong> {painting.year}
-      </p>
-      <p>
-        <strong>Medium:</strong> {painting.medium}
-      </p>
-      <p>
-        <strong>Dimensions:</strong> {painting.dimensions}
-      </p>
+    <div className="bg-gray-950 text-white min-h-screen px-10 py-10">
+      <NavLink to="/paintings" className="text-blue-400 hover:underline">
+        ← Back to Paintings
+      </NavLink>
+
+      <div className="flex justify-center mt-10">
+        <img
+          src={painting.src}
+          alt={painting.title}
+          className="max-w-full h-auto rounded-xl shadow-lg"
+        />
+      </div>
+
+      <h2 className="text-center text-2xl mt-6">{painting.title}</h2>
     </div>
   );
 };

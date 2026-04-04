@@ -1,7 +1,7 @@
 .footer {
-  color: green;
+  color: white;
   text-align: center;
-  margin-top: 90vh;
+  background-color: blue;
   position: relative;
   font-size: small;
 }

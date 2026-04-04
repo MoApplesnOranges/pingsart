@@ -11,13 +11,13 @@ const Navbar = () => {
       <div className="navbar-right">
         <ul className="nav-links">
           <li>
+            <NavLink to="/photography">Photography</NavLink>
+          </li>
+          <li>
             <NavLink to="/paintings">Paintings</NavLink>
           </li>
           <li>
             <NavLink to="/chineseart">Chinese Paintings</NavLink>
-          </li>
-          <li>
-            <NavLink to="/photography">Photography</NavLink>
           </li>
           <li>
             <NavLink to="/contact">Contact</NavLink>

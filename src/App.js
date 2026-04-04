@@ -9,9 +9,10 @@ import Home from "./Pages/Home";
 import Chinese from "./Pages/chineseart";
 import Photography from "./Pages/photography";
 import Contact from "./Pages/contact";
+import PhotoDetail from "./Pages/PhotoDetail";
 import PaintingDetail from "./Pages/paintingdetail";
 // import ChineseDetail from "./Pages/chinesedetail";
-import "../index.css";
+import "./index.css";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/photography" element={<Photography />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/paintings/:id" element={<PaintingDetail />} />
+          <Route path="/photography/:id" element={<PhotoDetail />} />
           {/* <Route path="/chineseart/:id" element={<ChineseDetail />} /> */}
         </Routes>
         <Footer />

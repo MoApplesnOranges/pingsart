@@ -2,14 +2,14 @@
   text-align: center;
 }
 
-.grid {
+/* .grid {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
   height: 60vh;
   row-gap: 6%;
-}
+} */
 
 /* .grid > * {
   border: 20px solid rgb(173, 86, 33);
@@ -17,7 +17,7 @@
   background-color: rgb(96 139 168 / 0.2);
 } */
 
-.one {
+/* .one {
   width: 30%;
 }
 
@@ -38,4 +38,4 @@
 .three img {
   width: 130vh;
   height: 30vh;
-}
+} */

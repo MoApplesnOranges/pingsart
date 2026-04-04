@@ -1,61 +1,65 @@
 import React from "react";
-// import DSC_1200 from "../images/DSC_1200.jpg";
-// import IMG_1675 from "../images/IMG_1675.jpg";
-// import IMG_1715 from "../images/IMG_1715.jpg";
-import "./Home.css";
 import { NavLink } from "react-router-dom";
-import { Nav } from "react-bootstrap";
+import heron from "../images/heron.jpg";
+import elephant from "../images/elephant.jpg";
+import chinese_rivers from "../images/chinese_rivers.jpg";
 
 const Home = () => {
   return (
-    <div>
-      <div>
-        <h1 className="header">Welcome to Ping's Art Gallery</h1>
+    <div className="bg-gray-950 text-white min-h-screen px-10 py-16">
+      {/* Header */}
+      <div className="text-center mb-16">
+        <h1 className="text-5xl font-bold mb-4">Ping's Art Gallery</h1>
+        <p className="text-gray-400">
+          Photography, Paintings, and Traditional Chinese Art
+        </p>
       </div>
-      <div className="grid">
-        <div className="one">
-          <NavLink to="/photography">
-            <img src="https://i.imgur.com/b2LOHC3.jpeg" alt="heron photo" />
-          </NavLink>
-          <div className="photo">
-            <NavLink to="/Photography">Photography</NavLink>
-          </div>
-        </div>
-        <div className="two">
-          <NavLink to="/paintings">
-            <img src="https://i.imgur.com/fTZNkXy.jpeg" alt="elephant photo" />
-          </NavLink>
-          <div className="paint">
-            <NavLink to="/paintings">Paintings</NavLink>
-          </div>
-        </div>
-        <div className="three">
-          <NavLink to="/chineseart">
-            <img src="https://i.imgur.com/0Yvgon5.jpeg" alt="chinese photo" />
-          </NavLink>
-          <div className="chinesepaint">
-            <NavLink to="/chineseart">Chinese Paintings</NavLink>
-          </div>
-          <div className="artist">About the Artist</div>
-        </div>
 
-        <div className="container">
-          <div className="artistphoto">
-            <img src="https://i.imgur.com/bZjc1LB.jpeg" />
-          </div>
-          <div className="artistbio">
-            <p>
-              Ping is a talented artist with a passion for capturing the beauty
-              of nature and culture through her art. She specializes in
-              photography and traditional Chinese painting, showcasing her
-              unique perspective and artistic vision.
-            </p>
-            <p>
-              Ping's work has been exhibited in various galleries and has
-              received numerous accolades for its creativity and emotional
-              depth.
-            </p>
-          </div>
+      {/* Gallery Layout */}
+      <div className="max-w-7xl mx-auto grid grid-cols-2 gap-10">
+        {/* LEFT SIDE */}
+        <NavLink to="/photography" className="group flex flex-col">
+          <img
+            src={heron}
+            alt="Photography"
+            className="w-full h-full object-cover rounded-xl shadow-lg
+            group-hover:scale-[1.02] transition duration-300"
+          />
+
+          <h2 className="mt-4 text-xl font-semibold text-center">
+            Photography
+          </h2>
+        </NavLink>
+
+        {/* RIGHT COLUMN */}
+        <div className="flex flex-col gap-10">
+          {/* Paintings */}
+          <NavLink to="/paintings" className="group flex flex-col">
+            <img
+              src={elephant}
+              alt="Paintings"
+              className="w-full h-full object-cover rounded-xl shadow-lg
+              group-hover:scale-[1.02] transition duration-300"
+            />
+
+            <h2 className="mt-4 text-lg font-semibold text-center">
+              Paintings
+            </h2>
+          </NavLink>
+
+          {/* Chinese Paintings */}
+          <NavLink to="/chineseart" className="group flex flex-col">
+            <img
+              src={chinese_rivers}
+              alt="Chinese Paintings"
+              className="w-full h-full object-cover rounded-xl shadow-lg
+              group-hover:scale-[1.02] transition duration-300"
+            />
+
+            <h2 className="mt-4 text-lg font-semibold text-center">
+              Chinese Paintings
+            </h2>
+          </NavLink>
         </div>
       </div>
     </div>
