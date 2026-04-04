@@ -1,5 +1,5 @@
-import heron from "../../images/heron.jpg";
-import ZachCatAR15 from "../../images/ZachCatAR15.jpg";
+import heron from "../images/heron.jpg";
+import ZachCatAR15 from "../images/ZachCatAR15.jpg";
 
 const photos = [
   { id: "1", src: heron, title: "Heron" },

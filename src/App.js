@@ -6,7 +6,6 @@ import Footer from "./Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Paintings from "./Pages/paintings";
 import Home from "./Pages/Home";
-import Chinese from "./Pages/chineseart";
 import Photography from "./Pages/photography";
 import Contact from "./Pages/contact";
 import PhotoDetail from "./Pages/PhotoDetail";
@@ -22,12 +21,10 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/paintings" element={<Paintings />} />
-          <Route path="/chineseart" element={<Chinese />} />
           <Route path="/photography" element={<Photography />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/paintings/:id" element={<PaintingDetail />} />
           <Route path="/photography/:id" element={<PhotoDetail />} />
-          {/* <Route path="/chineseart/:id" element={<ChineseDetail />} /> */}
         </Routes>
         <Footer />
       </div>

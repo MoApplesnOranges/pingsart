@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import heron from "../images/heron.jpg";
-import elephant from "../images/elephant.jpg";
-import chinese_rivers from "../images/chinese_rivers.jpg";
+import heron from "./images/heron.jpg";
+import elephant from "./images/elephant.jpg";
+import chinese_rivers from "./images/chinese_rivers.jpg";
 
 const Home = () => {
   return (
@@ -15,7 +15,6 @@ const Home = () => {
         </p>
       </div>
 
-      {/* Gallery Layout */}
       <div className="max-w-7xl mx-auto grid grid-cols-2 gap-10">
         {/* LEFT SIDE */}
         <NavLink to="/photography" className="group flex flex-col">

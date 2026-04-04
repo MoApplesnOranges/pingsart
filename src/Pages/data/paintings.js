@@ -1,5 +1,5 @@
-import elephant from "../../images/elephant.jpg";
-import chinese_rivers from "../../images/chinese_rivers.jpg";
+import elephant from "../images/elephant.jpg";
+import chinese_rivers from "../images/chinese_rivers.jpg";
 
 const paintings = [
   { id: "1", src: elephant, title: "Elephant Painting" },
