@@ -10,7 +10,8 @@ import Photography from "./Pages/photography";
 import Contact from "./Pages/contact";
 import PhotoDetail from "./Pages/PhotoDetail";
 import PaintingDetail from "./Pages/paintingdetail";
-// import ChineseDetail from "./Pages/chinesedetail";
+import ChinesePaintings from "./Pages/ChinesePaintings";
+import ChinesePaintingDetail from "./Pages/ChinesePaintingDetail";
 import "./index.css";
 
 const App = () => {
@@ -25,6 +26,8 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/paintings/:id" element={<PaintingDetail />} />
           <Route path="/photography/:id" element={<PhotoDetail />} />
+          <Route path="/chineseart" element={<ChinesePaintings />} />
+          <Route path="/chineseart/:id" element={<ChinesePaintingDetail />} />
         </Routes>
         <Footer />
       </div>
