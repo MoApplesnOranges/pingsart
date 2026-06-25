@@ -1,6 +1,6 @@
 import elephant from "../images/elephant.jpg";
 import Red_Cardinal from "../images/Red_Cardinal.jpeg";
-import Lover_Swans from "../images/lover_swans.jpeg";
+import Lover_Swans from "../images/Lover_Swans.jpeg";
 
 const paintings = [
   { id: "1", src: elephant, title: "Elephant by the River" },
