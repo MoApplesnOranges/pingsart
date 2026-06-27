@@ -4,7 +4,7 @@ import chinesePaintings from "./data/chinesePaintings";
 
 const ChinesePaintings = () => {
   return (
-    <div className="bg-gray-950 text-white min-h-screen px-10 py-16">
+    <div className="bg-teal-950 text-white min-h-screen px-10 py-16">
       {/* Header */}
       <div className="text-center mb-16">
         <h1 className="text-5xl font-bold mb-4">Chinese Paintings</h1>
