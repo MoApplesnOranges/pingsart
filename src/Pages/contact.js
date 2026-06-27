@@ -3,9 +3,6 @@ import emailjs from "@emailjs/browser";
 import { NavLink } from "react-router-dom";
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
   const [showPopup, setShowPopup] = useState(false);
 
   const [form, setForm] = useState({
@@ -25,24 +22,41 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm("service_k313fi3", "contact_form", form.current, {
+
+    const contactPromise = emailjs
+      .sendForm("service_k313fi3", "contact_form", e.target, {
         publicKey: "bmEfw8nCY3g9MocDW",
       })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-        },
-        (error) => {
-          console.log("FAILED", error.text);
-        },
-      )
       .then(() => {
-        setName("");
-        setEmail("");
-        setMessage("");
+        console.log("SUCCESS!");
+        setSubmitted(true);
+        setForm({ name: "", email: "", message: "" });
       })
-      .then(setShowPopup(true));
+      .catch((error) => {
+        console.log("FAILED", error.text);
+      })
+      .then(() => setShowPopup(true));
+
+    const replyPromise = emailjs.send(
+      "service_k313fi3",
+      "template_eoxb5x6",
+      {
+        name: form.name,
+        email: form.email,
+        message: form.message,
+      },
+      { publicKey: "bmEfw8nCY3g9MocDW" },
+    );
+
+    Promise.all([contactPromise, replyPromise])
+      .then(() => {
+        console.log("SUCCESS!");
+        setSubmitted(true);
+        setForm({ name: "", email: "", message: "" });
+      })
+      .catch((error) => {
+        console.log("FAILED", error.text);
+      });
   };
   return (
     <div className="bg-teal-950 text-white min-h-screen px-10 py-16">

@@ -4,13 +4,21 @@
   align-items: center;
   background-color: #1a1a1a;
   color: #fff;
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
 
-.navbar-right .nav-links {
+.nav-links {
   list-style-type: none;
   display: flex;
   gap: 4vw;
   justify-content: right;
   resize: horizontal;
+}
+
+.navbar-left {
+  padding: 1rem 2rem;
+}
+
+.navbar-right {
+  padding: 1rem 2rem;
 }
