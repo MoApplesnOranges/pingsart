@@ -64,7 +64,7 @@ const Contact = () => {
       <div className="text-center mb-16">
         <h1 className="text-5xl font-bold mb-4">Contact</h1>
         <p className="text-gray-400">
-          Get in touch for inquiries or collaborations
+          Get in touch with Ping! for inquiries or collaborations
         </p>
       </div>
 

@@ -18,12 +18,21 @@ const Home = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-2 gap-10">
         {/* LEFT SIDE */}
         <NavLink to="/photography" className="group flex flex-col">
-          <img
-            src={heron}
-            alt="Photography"
-            className="w-full h-full object-cover rounded-xl shadow-lg
+          <div
+            className="p-3 bg-[#1c1410] rounded-sm shadow-2xl
+            border border-[#8a6d3b]/60
             group-hover:scale-[1.02] transition duration-300"
-          />
+            style={{
+              boxShadow:
+                "0 0 0 1px rgba(212,175,55,0.25), 0 0 0 8px #1c1410, 0 0 0 9px rgba(212,175,55,0.4), 0 10px 30px rgba(0,0,0,0.5)",
+            }}
+          >
+            <img
+              src={heron}
+              alt="Photography"
+              className="w-full h-full object-cover"
+            />
+          </div>
 
           <h2 className="mt-4 text-xl font-semibold text-center">
             Photography
@@ -34,12 +43,21 @@ const Home = () => {
         <div className="flex flex-col gap-10">
           {/* Paintings */}
           <NavLink to="/paintings" className="group flex flex-col">
-            <img
-              src={elephant}
-              alt="Paintings"
-              className="w-full h-full object-cover rounded-xl shadow-lg
+            <div
+              className="p-3 bg-[#1c1410] rounded-sm shadow-2xl
+              border border-[#8a6d3b]/60
               group-hover:scale-[1.02] transition duration-300"
-            />
+              style={{
+                boxShadow:
+                  "0 0 0 1px rgba(212,175,55,0.25), 0 0 0 8px #1c1410, 0 0 0 9px rgba(212,175,55,0.4), 0 10px 30px rgba(0,0,0,0.5)",
+              }}
+            >
+              <img
+                src={elephant}
+                alt="Paintings"
+                className="w-full h-full object-cover"
+              />
+            </div>
 
             <h2 className="mt-4 text-lg font-semibold text-center">
               Paintings
@@ -48,12 +66,21 @@ const Home = () => {
 
           {/* Chinese Paintings */}
           <NavLink to="/chineseart" className="group flex flex-col">
-            <img
-              src={chinese_rivers}
-              alt="Chinese Paintings"
-              className="w-full h-full object-cover rounded-xl shadow-lg
+            <div
+              className="p-3 bg-[#1c1410] rounded-sm shadow-2xl
+              border border-[#8a6d3b]/60
               group-hover:scale-[1.02] transition duration-300"
-            />
+              style={{
+                boxShadow:
+                  "0 0 0 1px rgba(212,175,55,0.25), 0 0 0 8px #1c1410, 0 0 0 9px rgba(212,175,55,0.4), 0 10px 30px rgba(0,0,0,0.5)",
+              }}
+            >
+              <img
+                src={chinese_rivers}
+                alt="Chinese Paintings"
+                className="w-full h-full object-cover"
+              />
+            </div>
 
             <h2 className="mt-4 text-lg font-semibold text-center">
               Chinese Paintings
