@@ -20,6 +20,9 @@ const Navbar = () => {
             <NavLink to="/chineseart">Chinese Paintings</NavLink>
           </li>
           <li>
+            <NavLink to="/aboutme">About Ping</NavLink>
+          </li>
+          <li>
             <NavLink to="/contact">Contact</NavLink>
           </li>
         </ul>

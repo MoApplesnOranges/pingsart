@@ -12,6 +12,7 @@ import PhotoDetail from "./Pages/PhotoDetail";
 import PaintingDetail from "./Pages/paintingdetail";
 import ChinesePaintings from "./Pages/ChinesePaintings";
 import ChinesePaintingDetail from "./Pages/ChinesePaintingDetail";
+import AboutMe from "./Pages/AboutMe";
 import "./index.css";
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
           <Route path="/photography/:id" element={<PhotoDetail />} />
           <Route path="/chineseart" element={<ChinesePaintings />} />
           <Route path="/chineseart/:id" element={<ChinesePaintingDetail />} />
+          <Route path="/aboutme" element={<AboutMe />} />
         </Routes>
         <Footer />
       </div>
